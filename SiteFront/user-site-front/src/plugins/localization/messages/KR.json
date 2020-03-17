@@ -1,0 +1,394 @@
+{
+  "common": {
+    "comment": {
+      "valid": "✔",
+      "essential": "필수 사항입니다.",
+      "invalidEmail": "유효한 메일 주소를 입력하세요",
+      "tooShortPassword": "6글자 이상으로 설정하세요",
+      "failToLogin": "메일주소 또는 패스워드가 맞지 않습니다.",
+      "failToLogin_inactive": "일시정지된 유저입니다. 관리자에게 문의해주세요.",
+      "noExistEmail": "입력한 메일 주소를 가지는 계정은 존재하지 않습니다.",
+      "checkYourEmail": "이메일을 확인해주세요.",
+      "wrongLoginInfo": "잘못된 로그인 정보입니다. 다시 로그인해주세요."
+    }
+  },
+
+  "before_login": {
+    "input_email": "이메일",
+    "input_id": "ID",
+    "input_password": "비밀번호",
+    "button_login": "로그인",
+    "checkbox_memory": "기억하기",
+    "msg_password": "패스워드를 잊은 경우",
+    "msg_click": "여기를 클릭"
+  },
+
+  "find_password": {
+    "title": "패스워드를 잊은 경우",
+    "subTitle1": "패스워드 변경을 위해",
+    "subTitle2": "등록한 메일 주소를 입력하세요",
+    "text_email": "e메일 주소",
+    "button_send": "보내기"
+  },
+
+  "after_login": {
+  },
+
+  "header": {
+    "account-setting": "계정 설정",
+    "inquiry": "문의",
+    "problem-reporting": "문제 보고",
+    "logout": "로그아웃"
+  },
+
+  "path": {
+    "home": {
+      "url": "/main",
+      "pathname": "홈"
+    },
+
+    "account_setting": {
+      "pathname": "계정 설정",
+      "imgName": "ico_tit_myfile.png"
+    },
+
+    "inquiry": {
+      "pathname": "문의",
+      "imgName": "ico_tit_myfile.png"
+    },
+
+    "problem_reporting": {
+      "pathname": "문제 보고",
+      "imgName": "ico_tit_myfile.png"
+    },
+
+    "connected_device": {
+      "pathname": "연결된 기기",
+      "imgName": "ico_tit_connect.png",
+      "desktop": {
+        "url": "/connected_device/desktop",
+        "pathname": "desktop",
+        "imgName": "ico_tit_connect.png"
+      },
+      "add": {
+        "pathname": "기기 추가",
+        "imgName": "ico_tit_connect.png"
+      }
+    },
+
+    "cloud_drive": {
+      "url": "/cloud_drive",
+      "pathname": "클라우드 드라이브",
+      "imgName": "ico_tit_cloud.png"
+    },
+
+    "favorite": {
+      "url": "/favorite",
+      "pathname": "즐겨찾기",
+      "imgName": "ico_tit_bookmark.png"
+    },
+
+    "share": {
+      "pathname": "공유",
+      "get_shared": {
+        "url": "/share/get_shared",
+        "pathname": "공유받은 파일",
+        "imgName": "ico_tit_share.png"
+      },
+      "share": {
+        "url": "/share/share",
+        "pathname": "공유한 파일 관리",
+        "imgName": "ico_tit_share.png"
+      }
+    },
+
+    "recycle_bin": {
+      "url": "/recycle_bin",
+      "pathname": "휴지통",
+      "imgName": "ico_tit_recycle.png"
+    },
+
+    "storage_service": {
+      "pathname": "스토리지 서비스",
+      "imgName": "ico_tit_storage.png",
+      "dropbox": {
+        "url": "/storage_service/dropbox",
+        "pathname": "dropbox",
+        "imgName": "ico_tit_storage.png"
+      },
+      "googledrive": {
+        "url": "/storage_service/googledrive",
+        "pathname": "Google Drive",
+        "imgName": "ico_tit_storage.png"
+      },
+      "add": {
+        "pathname": "스토리지 서비스 추가",
+        "imgName": "ico_tit_storage.png"
+      }
+    },
+    "management": {
+      "pathname": "관리",
+      "user_server": {
+        "url": "/management/user_server",
+        "pathname": "사용자 또는 기기",
+        "imgName": "ico_tit_admin.png",
+        "user_info": {
+          "pathname": "사용자 정보",
+          "imgName": "ico_tit_admin.png"
+        },
+        "mail_invitation": {
+          "pathname": "메일로 초대",
+          "imgName": "ico_tit_admin.png"
+        },
+        "manual_invitation": {
+          "pathname": "수동으로 초대",
+          "imgName": "ico_tit_admin.png"
+        },
+        "csv_invitation": {
+          "pathname": "csv 파일에서 일괄 추가",
+          "imgName": "ico_tit_admin.png"
+        }
+      },
+      "policy": {
+        "url": "/management/policy",
+        "pathname": "정책",
+        "imgName": "ico_tit_admin.png"
+      },
+      "setting": {
+        "url": "/management/setting",
+        "pathname": "설정",
+        "imgName": "ico_tit_admin.png"
+      }
+    },
+    "report": {
+      "pathname": "리포트",
+      "audit_report": {
+        "url": "/report/audit_report",
+        "pathname": "감사 보고서",
+        "imgName": "ico_tit_report.png"
+      },
+      "report_and_statistics": {
+        "url": "/report/report_and_statistics",
+        "pathname": "리포트 & 통계",
+        "imgName": "ico_tit_report.png"
+      }
+    },
+    "buying": {"pathname": "구입"},
+    "my_file": {
+      "pathname": "내 파일",
+      "category": {
+        "url": "/my_file/category",
+        "pathname": "카테고리",
+        "imgName": "ico_tit_myfile.png"
+      },
+      "owner": {
+        "url": "/my_file/owner",
+        "pathname": "오너",
+        "imgName": "ico_tit_myfile.png"
+      },
+      "size": {
+        "url": "/my_file/size",
+        "pathname": "사이즈",
+        "imgName": "ico_tit_myfile.png"
+      },
+      "change_day": {
+        "url": "/my_file/change_day",
+        "pathname": "변경일",
+        "imgName": "ico_tit_myfile.png"
+      },
+      "storage_kind": {
+        "url": "/my_file/storage_kind",
+        "pathname": "스토리지 종류",
+        "imgName": "ico_tit_myfile.png"
+      }
+    },
+    "detail": {
+      "pathname": "상세",
+      "share": {
+        "pathname": "공유",
+        "imgName": "ico_tit_share.png"
+      },
+      "cold_storage": {
+        "pathname": "콜드 스토리지",
+        "imgName": "ico_tit_cold.png"
+      },
+      "recycle_bin": {
+        "pathname": "휴지통",
+        "imgName": "ico_tit_recycle.png"
+      }
+    }
+  },
+
+  "lnb": {
+    "home": "홈",
+    "connected-device": "연결된 기기",
+    "connected-device-all": "전체기기",
+    "connected-device-add": "기기 추가",
+    "cloud-drive": "클라우드 드라이브",
+    "favorite": "즐겨찾기",
+
+    "my-file": "내 파일",
+    "my-file-category": "카테고리",
+    "my-file-owner": "오너",
+    "my-file-size": "사이즈",
+    "my-file-change-day": "변경일",
+    "my-file-storage-kind": "스토리지 종류",
+
+    "share": "공유",
+    "share-get-shared": "공유받은 파일",
+    "share-share": "공유한 파일 관리",
+
+    "recycle-bin": "휴지통",
+
+    "storage-service": "스토리지 서비스",
+    "storage-service-add": "스토리지 서비스 추가",
+    "management": "관리",
+    "management-user-server": "사용자 또는 기기",
+    "management-policy": "정책",
+    "management-setting": "설정",
+    "report": "리포트",
+    "report-audit": "감사 보고서",
+    "report-statistics": "리포트 & 통계",
+    "buying": "구입"
+  },
+
+  "my_file": {
+    "file_name": "이름",
+    "owner": "소유자",
+    "change_day": "변경일",
+    "etc": "기타",
+    "download": "다운로드",
+    "share": "공유",
+    "delete": "삭제",
+    "totality": "전체",
+    "document": "문서",
+    "image": "사진",
+    "video": "비디오",
+    "music": "음악",
+    "ocr": "OCR",
+    "folder": {
+      "folder": "폴더",
+      "file_type": "파일타입",
+      "kind": "종류",
+      "total": "전체",
+      "word_text": "Word문서와 텍스트",
+      "presentations": "프레젠테이션",
+      "spreadsheet": "스프레드시트",
+      "pdf": "PDF",
+      "etc": "기타"
+    },
+    "category": {
+      "title": "카테고리"
+    },
+    "size": {
+      "title": "사이즈",
+      "1mb_under": "1MB 미만",
+      "1gb_over": "1GB 이상",
+      "option_size": "임의의 사이즈"
+    },
+    "change_day_sub": {
+      "past_24time": "과거 24시간",
+      "past_1week": "과거 1주일",
+      "past_1month": "과거 1개월",
+      "past_1year": "과거 1년",
+      "1year": "1년전",
+      "option_date": "임의의 날짜"
+    },
+    "storage_kind_sub": {
+      "title": "스토리지 종류",
+      "normal_storage": "일반 스토리지",
+      "cold_storage": "콜드 스토리지"
+    },
+    "navigation": {
+      "home": "홈",
+      "my_file": "내 파일",
+      "category": "카테고리",
+      "size": "사이즈",
+      "change_day": "변경일",
+      "storage_kind": "스토리지 종류"
+    },
+    "border_list": {
+      "total_select": "전체선택",
+      "name": "이름",
+      "owner": "오너",
+      "change_day": "변경일",
+      "etc": "기타"
+    },
+    "detail_info": {
+      "detail_info": {
+        "title": "자세한 사항",
+        "file_type": "종류",
+        "file_size": "사이즈",
+        "file_location": "장소",
+        "file_change_date": "변경일",
+        "file_create_date": "작성일",
+        "file_backup_date": "백업일",
+        "file_device": "단말"
+      },
+      "version_info": {
+        "title": "버전표시",
+        "file_name": "이름",
+        "file_size": "사이즈",
+        "file_type": "종류"
+      }
+    }
+  },
+
+  "policy": {
+    "policy_create": "정책작성",
+    "policy_name": "정책명",
+    "user_cnt": "이용자수",
+    "server_cnt": "서버수",
+    "create_date": "작성일",
+    "etc": "기타",
+    "check_all": "전체선택",
+    "check": "선택",
+    "cancel": "취소",
+    "save": "저장",
+    "delete": "삭제",
+    "policy_pop": {
+      "policy_assign_user": "정책이 할당되어 있는 유저",
+      "user_coputer_name": "유저명/컴퓨터이름",
+      "email": "e 메일 주소",
+      "general_storage": "일반 스토리지 사용량/최대",
+      "cold_storage": "콜드 스토리지 사용량/최대",
+      "ocr": "OCR 사용량/최대",
+      "nolimit": "제한 없이",
+      "close_btn": "닫기"
+    },
+
+    "policy_writing": {
+      "policy_create": "정책 작성",
+      "new_policy_write": "새로운 정책을 작성하세요.",
+      "policy_name_write": "정책명 작성",
+      "policy_name_write_enter": "정책명을 입력해주세요.",
+      "policy_name": "정책명",
+      "general_storage": "일반 스토리지 데이터",
+      "cold_storage": "콜드 스토리지 데이터",
+      "ocr_data": "OCR 데이터",
+      "extensions": "확장자",
+      "dual_backup": "듀얼 백업",
+      "settings": "설정",
+      "permission": "권한"
+    },
+
+    "general": {
+      "recommend_backup": "추천 백업",
+      "select_all": "전체선택",
+      "desktop": "데스크탑",
+      "document": "문서",
+      "afile": "회계파일",
+      "bookmark": "북마크",
+      "picture": "화상/사진",
+      "music": "음악",
+      "video": "비디오",
+      "card": "연하장",
+      "fileLocation": "파일위치",
+      "file_note": "(폴더 위치 지정은 다음 형식이어야 합니다. C:\\Users\\(사용자 이름)\\Desktop\\)",
+      "folderLocation_insert": "폴더 위치 입력",
+      "insert_var": "변수삽입",
+      "folderLocation": "폴더위치",
+      "filterAdd": "필터추가"
+    }
+  }
+}

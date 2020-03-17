@@ -1,0 +1,553 @@
+@charset 'utf-8';
+
+/* Main Common */
+article#contents.main {
+	display: block;
+	position: relative;
+	overflow: auto;
+	height: 100vh;
+	border-top: 79px solid white;
+	box-sizing: border-box;
+}
+article#contents.main .mCSB_draggerContainer {
+	z-index: 3;
+}
+
+/* Main Intro */
+div.main_top_section_wrapper {
+	padding:0 40px;
+	background-color: #F5F9FD;
+	border-bottom: 1px solid #CCD4DC;
+}
+div.main_top_section_wrapper:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+section#main_intro {
+	overflow: hidden;
+	position: relative;
+	float: left;
+	width:32%;
+	height: 447px;
+	padding: 47px 0px 0px 0px;
+	box-sizing: border-box;
+	background-color: #F5F9FD;
+}
+section#main_intro:after {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 447px;
+	box-sizing: border-box;
+	background: url(../images/main/bg_main_intro.png) no-repeat right bottom
+}
+section#main_intro h2,
+section#main_intro p {
+	position: relative;
+	z-index: 2;
+}
+section#main_intro h2 {
+	line-height: 115%;
+	font-size: 25px;
+	font-weight: normal;
+	color: #35599C;
+	margin-bottom: 9px;
+}
+
+/* Main Intro admin  */
+section#main_intro.vary_admin {
+	padding: 33px 34px 0px 0px;
+	border-right:1px solid #CCD4DC;
+}
+section#main_intro.vary_admin:after {
+	display: none;
+}
+section.vary_admin .main_intro_tab{
+	margin-bottom:24px;
+	height: 40px;
+	border:1px solid #c4d1de;
+	border-radius: 5px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+section.vary_admin .main_intro_tab li{
+	float:left;
+	width:50%;
+	box-sizing: border-box;
+}
+section.vary_admin .main_intro_tab li:first-child{
+	border-right:1px solid #c4d1de;
+}
+section.vary_admin .main_intro_tab li a{
+	display: block;
+	padding-top: 10px;
+	height: 40px;
+	color:#7796af;
+	font-size:18px;
+	text-align: center;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+section.vary_admin .main_intro_tab li a.active{
+	color: #333333;
+	background-color: #ffffff;
+}
+section.vary_admin .bar_graph_wrap {
+	padding:0 8px;
+	clear: both;
+}
+section.vary_admin .bar_graph_wrap ul{
+	float: right;
+	margin-bottom:20px;
+}
+section.vary_admin .bar_graph_wrap li{
+	float: left;
+	margin-left: 24px;
+	font-weight: bold;
+}
+section.vary_admin .bar_graph_wrap .bullet{
+	display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+}
+section.vary_admin .bar_graph_wrap .bar_color_01 {
+	color: #f35458;
+}
+section.vary_admin .bar_graph_wrap .bar_color_01 .bullet{
+	background-color: #f35458;
+}
+section.vary_admin .bar_graph_wrap .bar_color_02 {
+	color: #47a1ee;
+}
+section.vary_admin .bar_graph_wrap .bar_color_02 .bullet{
+	background-color: #47a1ee;
+}
+section.vary_admin .bar_graph_wrap .bar_graph_con{
+	clear: both;
+	text-align: center;
+}
+
+
+/* Backup Status */
+section.main_backup_status {
+	margin-left: 2%;
+	float:left;
+	width:32%;
+	overflow: hidden;
+	height: 447px;
+	background-color: #F5F9FD;
+}
+section.main_backup_status h2 {
+	font-size: 20px;
+}
+section.main_backup_status .mbs_status,
+section.main_backup_status .mbs_protect {
+	padding: 46px 0px 55px 0px;
+	box-sizing: border-box;
+}
+section.main_backup_status .mbs_status .gauge {
+	float: left;
+	position: relative;
+	width: 248px;
+	height: 248px;
+	margin: 42px 30px 0px 0px;
+}
+section.main_backup_status .mbs_status .gauge .condition {
+	position: absolute;
+	top: 48px;
+	left: 48px;
+	width: 152px;
+	height: 152px;
+	text-align: center;
+	padding-top: 37px;
+	box-sizing: border-box;
+	border-radius: 50%;
+}
+section.main_backup_status .mbs_status .gauge .condition.safety {
+	background-color: #00CFAD;
+}
+section.main_backup_status .mbs_status .gauge .condition.warning {
+	background-color: #FFA11B;
+}
+section.main_backup_status .mbs_status .gauge .condition.dangers {
+	background-color: #F35458;
+}
+section.main_backup_status .mbs_status .gauge .condition .ico {
+	margin-bottom: 11px;
+}
+section.main_backup_status .mbs_status .gauge .condition .ico img {
+	vertical-align: top;
+}
+section.main_backup_status .mbs_status .gauge .condition p.txt {
+	padding-bottom: 18px;
+	line-height: 1;
+	font-size: 24px;
+	color: white;
+	background: url(../images/main/bullet_bso_dot.png) no-repeat center bottom;
+}
+section.main_backup_status .mbs_status .count {
+	margin: 43px 0px 0px 277px;
+}
+section.main_backup_status .mbs_status .count h3 {
+	margin-bottom: 5px;
+	font-size: 13px;
+	color: #F35458;
+	line-height: 1;
+}
+section.main_backup_status .mbs_status .count p.condition {
+	margin-bottom: 16px;
+	font-size: 26px;
+	font-weight: bold;
+	color: #F35458;
+	line-height: 1;
+}
+section.main_backup_status .mbs_status .count p.desc {
+	height: 58px;
+	padding: 0px 0px 12px 0px;
+}
+section.main_backup_status .mbs_status .count ul li {
+	position: relative;
+	padding: 10px 11px 9px 0px;
+	border-bottom: 1px solid #E0E0E0;
+}
+section.main_backup_status .mbs_status .count ul li i.bullet {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 8px;
+	border-radius: 6px;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+}
+section.main_backup_status .mbs_status .count ul li.valid i.bullet {
+	background-color: #FFBE4E;
+}
+section.main_backup_status .mbs_status .count ul li.online i.bullet {
+	background-color: #2AD702;
+}
+section.main_backup_status .mbs_status .count ul li.backing i.bullet {
+	background-color: #576BFF;
+}
+section.main_backup_status .mbs_status .count ul li strong.length {
+	position: absolute;
+	top: 11px;
+	right: 11px;
+	font-size: 15px;
+	text-align: right;
+}
+section.main_backup_status .mbs_status .count ul li.valid strong.length {
+	color: #FFBE4E;
+}
+section.main_backup_status .mbs_status .count ul li.online strong.length {
+	color: #2AD702;
+}
+section.main_backup_status .mbs_status .count ul li.backing strong.length {
+	color: #576BFF;
+}
+section.main_backup_status .mbs_protect ul {
+	margin-top: 26px;
+}
+section.main_backup_status .mbs_protect ul li {
+	position: relative;
+	padding: 16px 64px 15px;
+	width:100%;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 5px;
+	margin-top: 6px;
+	color: white;
+	box-shadow: 2.121px 2.121px 5px 0px rgba(156, 183, 210, 0.6);
+	box-sizing: border-box;
+}
+section.main_backup_status .mbs_protect ul li:first-child {
+	margin-top: 0px;
+}
+section.main_backup_status .mbs_protect ul li.completely {
+	border-color: #00C8A7;
+	background-color: #00CFAD;
+}
+section.main_backup_status .mbs_protect ul li.partially {
+	border-color: #F7970F;
+	background-color: #FFA11B;
+}
+section.main_backup_status .mbs_protect ul li.not {
+	border-color: #EA3135;
+	background-color: #F35458;
+}
+section.main_backup_status .mbs_protect ul li.non_use {
+	border-color: #99A9B4;
+	background-color: #AAB9C4;
+}
+section.main_backup_status .mbs_protect ul li h3 {
+	line-height: 1;
+	font-size: 18px;
+	font-weight: normal;
+}
+section.main_backup_status .mbs_protect ul li img.ico {
+	position: absolute;
+	top: 19px;
+	left: 20px;
+}
+section.main_backup_status .mbs_protect ul li p.length {
+	position: absolute;
+	top: 13px;
+	right: 18px;
+	font-size: 42px;
+	line-height: 1;
+	text-align: right;
+}
+section.main_backup_status .mbs_protect ul li p.desc {
+	line-height: 1;
+	margin-top: 6px;
+}
+
+
+/* Situation */
+section#main_situation {
+	overflow: hidden;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 24px 40px 36px;
+}
+section#main_situation h2 {
+	margin: 0px 0px 18px 8px;
+	font-size: 15px;
+	line-height: 1;
+}
+section#main_situation .ms_list {
+	float: left;
+	width: 32%;
+	margin-left: 2%;
+}
+section#main_situation .ms_list:first-child {
+	margin-left: 0px;
+}
+section#main_situation .ms_list ul {
+	border: 1px solid #CCD4DC;
+	border-radius: 8px;
+	box-shadow: 2.121px 2.121px 5px 0px rgba(187, 206, 238, 0.4);
+}
+section#main_situation .storage ul {
+	padding: 0px 18px;
+}
+section#main_situation .storage ul li {
+	position: relative;
+	overflow: hidden;
+	padding: 42px 0px 42px 150px;
+	border-top: 1px solid #CCD4DC;
+}
+section#main_situation .storage ul li:first-child {
+	border-top-width: 0px;
+}
+section#main_situation .storage ul li h3 {
+	font-size: 15px;
+	margin-bottom: 6px;
+}
+section#main_situation .storage ul li.normal h3 {
+	color: #F35458;
+}
+section#main_situation .storage ul li.cold h3 {
+	color: #47A1EE;
+}
+section#main_situation .storage ul li.ocr h3 {
+	color: #326EA1;
+}
+section#main_situation .storage ul li .gauge {
+	position: absolute;
+	top: 24px;
+	left: 14px;
+	width: 110px;
+	height: 110px;
+	line-height: 1;
+}
+section#main_situation .storage ul li .gauge img.ico {
+	position: absolute;
+	top: 37px;
+	left: 31px;
+}
+section#main_situation .storage ul li p.used_size,
+section#main_situation .storage ul li p.total_size {
+	color: #899A9D;
+	line-height: 1;
+}
+section#main_situation .storage ul li p.used_size {
+	float: left;
+}
+section#main_situation .storage ul li p.total_size {
+	float: right;
+	text-align: right;
+	margin-right: 24px;
+}
+section#main_situation .storage ul li p.used_size strong,
+section#main_situation .storage ul li p.total_size strong {
+	display: block;
+	font-size: 26px;
+	margin-bottom: 7px;
+}
+section#main_situation .storage ul li.normal p.used_size strong {
+	color: #F35458;
+}
+section#main_situation .storage ul li.cold p.used_size strong {
+	color: #47A1EE;
+}
+section#main_situation .storage ul li.ocr p.used_size strong {
+	color: #326EA1;
+}
+section#main_situation .storage ul li p.total_size strong {
+	font-weight: normal;
+}
+section#main_situation .alim ul {
+	padding: 5px 18px;
+}
+section#main_situation .alim ul li {
+	position: relative;
+	padding: 19px 17px 18px 47px;
+	height:57px;
+	border-top: 1px solid #CCD4DC;
+	box-sizing: border-box;
+}
+section#main_situation .alim ul li:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+section#main_situation .alim ul li:hover {
+	background-color: #F2F9FF;
+}
+section#main_situation .alim ul li:first-child {
+	border-top-width: 0px;
+}
+section#main_situation .alim ul li img.ico {
+	position: absolute;
+	top: 50%;
+	left: 12px;
+	margin-top: -12px;
+}
+section#main_situation .alim ul li span.record {
+	display:inline-block;
+	float:left;
+	width: calc(100% - 50px);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: bold;
+}
+section#main_situation .alim ul li span.record strong.condition {
+	color: #136BB5;
+}
+section#main_situation .alim ul li time {
+	display: inline-block;
+	float:right;
+	color: #999999;
+}
+section#main_situation .data_type ul {
+	padding: 4px 18px;
+}
+section#main_situation .data_type ul li {
+	position: relative;
+	padding: 28px 0px 28px 58px;
+	border-top: 1px solid #CCD4DC;
+}
+section#main_situation .data_type ul li:first-child {
+	border-top-width: 0px;
+}
+section#main_situation .data_type ul li h3 {
+	font-size: 15px;
+	color: #136BB5;
+	line-height: 1;
+	margin-bottom: 10px;
+}
+section#main_situation .data_type ul li.etc h3 {
+	color: #748A9A;
+}
+section#main_situation .data_type ul li img.ico {
+	position: absolute;
+	top: 28px;
+	left: 7px;
+}
+section#main_situation .data_type ul li p.percentage {
+	position: absolute;
+	top: 29px;
+	right: 0px;
+	line-height: 1;
+	font-size: 15px;
+	font-weight: bold;
+	color: #136BB5;
+}
+section#main_situation .data_type ul li.etc p.percentage {
+	color: #748A9A;
+}
+section#main_situation .data_type ul li .range {
+	height: 10px;
+	background-color: #EBEEF5;
+}
+section#main_situation .data_type ul li.etc .range {
+	background-color: #EEEEEE;
+}
+section#main_situation .data_type ul li .range span.gauge {
+	display: block;
+	height: 10px;
+	background-color: #136BB5;
+}
+section#main_situation .data_type ul li.etc .range span.gauge {
+	background-color: #748A9A;
+}
+
+/* 고 해상도 */
+/*@media all and (min-width: 2300px) {
+	section#main_intro:after {
+		border-right-width: 1400px;
+	}
+	section.main_backup_status {
+		width: 1400px;
+	}
+}*/
+
+/* 노트북 해상도 */
+@media all and (max-width: 1750px) {
+	section#main_intro {
+		display: none;
+	}
+	section.main_backup_status {
+		width:49%;
+	}
+	div.main_top_section_wrapper .circle_graph{
+		margin-left:0;
+	}
+	section#main_situation .ms_list {
+		width: 49%;
+	}
+	section#main_situation .data_type {
+		clear: both;
+		width: 100%;
+		margin: 24px 0px 0px 0px;
+	}
+	section#main_intro.vary_admin {
+		display: block;
+		width:100%;
+		border-bottom: 1px solid #CCD4DC;
+		border-right:0;
+	}
+}
+
+/* 하단 컨텐츠 높이 맞추기 해상도 */
+@media all and (max-width: 1221px) {
+	section#main_situation .alim ul {
+		padding: 2px 18px;
+	}
+
+	section#main_situation .alim ul li {
+		padding: 29px 17px 26px 47px;
+		height: 75px;
+	}
+}
