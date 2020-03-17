@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>AOSBOX</title>
+<link rel="stylesheet" href="inc/css/jquery-ui.min.css" />
+<link rel="stylesheet" href="inc/css/jquery.mCustomScrollbar.css" />
+<link rel="stylesheet" href="inc/css/import.css" />
+<script src="inc/js/jquery-1.12.4.min.js"></script>
+<script src="inc/js/jquery-ui.min.js"></script>
+<script src="inc/js/jquery.mCustomScrollbar.js"></script>
+<script src="inc/js/script.js"></script>
+</head>
+<body>
+
+
+	<!--  layer_popup 의 display 는 block 이 아니라 "table" 입니다.  -->
+
+	<!-- S : layer_popup 계정 미선택 -->
+	<div class="layer_popup">
+		<div class="layer_inner">
+			<div class="layer_content none_title canceled">
+				<strong>Canceled</strong>
+				<p class="default_text">계정을 선택하세요</p>
+				<!-- 이미 활성화 된 리셀러를 선택한 경우 -->
+				<!-- <p>이미 활성화 되고 있습니다.</p> -->
+				<button type="button" class="btn_layer_common btn_red">OK</button>
+			</div>
+		</div>
+	</div>
+	<!-- E : layer_popup 계정 미선택 -->
+
+	<!-- S : layer_popup 계정 활성화 -->
+	<div class="layer_popup">
+		<div class="layer_inner">
+			<div class="layer_content checked">
+				<h5>계정 활성화</h5>
+				<div class="content_inner">
+					<p class="default_text">선택한 항목을 활성화 하시겠습니까?</p>
+
+					<div class="layer_btn_wrap">
+						<button type="button" class="btn_layer_common btn_blue">OK</button>
+						<button type="button" class="btn_layer_common btn_white">취소</button>
+					</div>
+				</div>
+				<button class="btn_close" type="button">
+					<span class="blind">닫기</span>
+					<span class="ico_close"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- E : layer_popup 계정 활성화 -->
+
+	<!-- S : layer_popup 계정 일시정지 -->
+	<div class="layer_popup">
+		<div class="layer_inner">
+			<div class="layer_content confirm">
+				<h5>계정 일시정지</h5>
+				<div class="content_inner">
+					<p class="default_text">선택한 항목을 일시정지해도 되겠습니까?</p>
+
+					<div class="layer_btn_wrap">
+						<button type="button" class="btn_layer_common btn_blue">OK</button>
+						<button type="button" class="btn_layer_common btn_white">취소</button>
+					</div>
+				</div>
+				<button class="btn_close" type="button">
+					<span class="blind">닫기</span>
+					<span class="ico_close"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- E : layer_popup 계정 활성화 -->
+
+	<!-- S : layer_popup 계정 삭제 -->
+	<div class="layer_popup">
+		<div class="layer_inner">
+			<div class="layer_content confirm">
+				<h5>계정 삭제</h5>
+				<div class="content_inner">
+					<p class="default_text">선택한 계정을 삭제하시겠습니까?</p>
+
+					<div class="layer_btn_wrap">
+						<button type="button" class="btn_layer_common btn_blue">OK</button>
+						<button type="button" class="btn_layer_common btn_white">취소</button>
+					</div>
+				</div>
+				<button class="btn_close" type="button">
+					<span class="blind">닫기</span>
+					<span class="ico_close"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- E : layer_popup 계정 삭제 -->
+
+	<!-- S : layer_popup 회사명 변경 -->
+	<div class="layer_popup">
+		<div class="layer_inner">
+			<div class="layer_content">
+				<h5>회사명 변경</h5>
+				<div class="content_inner none_bg">
+					<fieldset>
+						<legend>회사명 변경</legend>
+						<label for="">회사명</label>
+						<input type="text">
+					</fieldset>
+					<div class="layer_btn_wrap">
+						<button type="button" class="btn_layer_common btn_blue">OK</button>
+						<button type="button" class="btn_layer_common btn_white">취소</button>
+					</div>
+				</div>
+				<button class="btn_close" type="button">
+					<span class="blind">닫기</span>
+					<span class="ico_close"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- E : layer_popup 회사명 변경 -->
+
+	<!-- S : layer_popup 플랜 명 변경 -->
+	<div class="layer_popup">
+		<div class="layer_inner">
+			<div class="layer_content">
+				<h5>플랜 명 변경</h5>
+				<div class="content_inner none_bg">
+					<fieldset>
+						<legend>플랜 명 변경</legend>
+						<label for="">플랜명</label>
+						<input type="text">
+					</fieldset>
+					<div class="layer_btn_wrap">
+						<button type="button" class="btn_layer_common btn_blue">OK</button>
+						<button type="button" class="btn_layer_common btn_white">취소</button>
+					</div>
+				</div>
+				<button class="btn_close" type="button">
+					<span class="blind">닫기</span>
+					<span class="ico_close"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- E : layer_popup 플랜 명 변경 -->
+
+	<!-- S : layer_popup 플랜 삭제 -->
+	<div class="layer_popup">
+		<div class="layer_inner">
+			<div class="layer_content confirm">
+				<h5>플랜 삭제</h5>
+				<div class="content_inner">
+					<p class="default_text">선택한 플랜을 삭제하시겠습니까?</p>
+
+					<div class="layer_btn_wrap">
+						<button type="button" class="btn_layer_common btn_blue">OK</button>
+						<button type="button" class="btn_layer_common btn_white">취소</button>
+					</div>
+				</div>
+				<button class="btn_close" type="button">
+					<span class="blind">닫기</span>
+					<span class="ico_close"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- E : layer_popup 플랜 삭제 -->
+
+	<!-- S : layer_popup 라이센스 삭제 -->
+	<div class="layer_popup">
+		<div class="layer_inner">
+			<div class="layer_content confirm">
+				<h5>라이센스 삭제</h5>
+				<div class="content_inner">
+					<p class="default_text">선택한 라이센스를 삭제하시겠습니까?</p>
+
+					<div class="layer_btn_wrap">
+						<button type="button" class="btn_layer_common btn_blue">OK</button>
+						<button type="button" class="btn_layer_common btn_white">취소</button>
+					</div>
+				</div>
+				<button class="btn_close" type="button">
+					<span class="blind">닫기</span>
+					<span class="ico_close"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- E : layer_popup 라이센스 삭제 -->
+
+	<!-- S : layer_popup 메모 수정 -->
+	<div class="layer_popup">
+		<div class="layer_inner">
+			<div class="layer_content">
+				<h5>메모 수정</h5>
+				<div class="content_inner none_bg">
+					<fieldset>
+						<legend>메모 수정</legend>
+						<label for="">내용</label>
+						<!-- <input class="inputEdit_memo" type="text" value="영업 겁나 못하는 리셀러에게 발급함"> -->
+						<textarea  class="inputEdit_memo" name="" id="" value="영업 겁나 못하는 리셀러에게 발급함"></textarea>
+					</fieldset>
+					<div class="layer_btn_wrap">
+						<button type="button" class="btn_layer_common btn_blue">OK</button>
+						<button type="button" class="btn_layer_common btn_white">취소</button>
+					</div>
+				</div>
+				<button class="btn_close" type="button">
+					<span class="blind">닫기</span>
+					<span class="ico_close"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- E : layer_popup 메모 수정 -->
+
+	<!-- S : layer_popup 일괄변경 -->
+	<div class="layer_popup">
+		<div class="layer_inner">
+			<div class="layer_content">
+				<h5>일괄변경</h5>
+				<div class="content_inner none_bg">
+					<div class="area_drag">
+						<p>Drop and Drop files here or Click</p>
+					</div>
+					<div class="layer_btn_wrap oneBtn">
+						<button type="button" class="btn_layer_common btn_blue">적용</button>
+					</div>
+				</div>
+				<button class="btn_close" type="button">
+					<span class="blind">닫기</span>
+					<span class="ico_close"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- E : layer_popup 일괄변경 -->
+
+	<!-- S : layer_popup 등록실패 -->
+	<div class="layer_popup">
+		<div class="layer_inner">
+			<div class="layer_content none_title canceled">
+				<strong>등록실패</strong>
+				<p class="default_text">올바른 사이즈의 이미지 파일을<br>등록해주세요.<br>(160 X 50 px)</p>
+				<!-- 이미 활성화 된 리셀러를 선택한 경우 -->
+				<!-- <p>이미 활성화 되고 있습니다.</p> -->
+				<button type="button" class="btn_layer_common btn_red">OK</button>
+			</div>
+		</div>
+	</div>
+	<!-- E : layer_popup 등록실패 -->
+
+	<!-- S : layer_popup 저장완료 -->
+	<div class="layer_popup">
+		<div class="layer_inner">
+			<div class="layer_content none_title checked">
+				<strong>저장완료</strong>
+				<p class="default_text">저장 완료 되었습니다.</p>
+				<button type="button" class="btn_layer_common btn_blue">OK</button>
+			</div>
+		</div>
+	</div>
+	<!-- E : layer_popup 저장완료 -->
+</body>
+</html>
