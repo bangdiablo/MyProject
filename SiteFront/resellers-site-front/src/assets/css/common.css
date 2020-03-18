@@ -1,5 +1,0 @@
-@charset 'utf-8';
-
-table.table_type01 thead tr th[scope="col"] a.sorting span.ico_upDown.inactive {
-	background: unset;
-}
